@@ -1,0 +1,74 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+/* prueba de grilla */
+.row::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+[class*="col-"] {
+	padding: 15px;
+}
+/* separacion de grillas */
+.col-1 {width: 8.333333333333332%;}
+.col-2 {width: 16.666666666666664%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33333333333333%;}
+.col-5 {width: 41.66666666666667%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.333333333333336%;}
+.col-8 {width: 66.66666666666666%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33333333333334%;}
+.col-11 {width: 91.66666666666666%;}
+.col-12 {width: 100%;}
+/* terminando prueba grilla */
+body {
+	background-image: url("../assets/images/sunny-day.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	padding-top: 360px;
+}
+.cat {
+	background-image: url("../assets/images/kitten-medium.png");
+	width: 450px;
+	height: 250px;
+	background-size: cover;
+	margin: auto;
+
+}
+
+@media only screen and (max-width: 900px){
+	body{
+		background-image: url("../assets/images/dawn.png");
+		background-size: cover;
+	    background-repeat: no-repeat;
+	    padding-top: 360px;
+	}
+	.cat {
+		background-image: url("../assets/images/kitten-large.png");
+		width: 550px;
+	    height: 250px;
+	    background-size: cover;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	body {
+		background-image: url("../assets/images/night.jpg");
+		background-size: cover;
+	    background-repeat: no-repeat;
+	    padding-top: 70px;
+	}
+	.cat {
+		background-image: url("../assets/images/kitten-small.png");
+		background-size: cover;
+		width: 350px;
+		height: 300px;
+		
+	}
+}
